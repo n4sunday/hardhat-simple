@@ -3,13 +3,13 @@
   "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.",
   "version": "1.0.0",
   "main": "hardhat.config.js",
-  "directories": {
+  "directories": {},
+  "scripts": {
     "build": "hardhat compile",
     "test:light": "hardhat test",
-    "test": "hardhat coverage"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat coverage",
+    "deploy:local": "hardhat run --network localhost scripts/deployMyContract.js",
+    "local-testnet": "hardhat node"
   },
   "author": "",
   "license": "ISC",
@@ -19,9 +19,8 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.4.5",
-    "hardhat": "^2.6.1"
-  },
-  "dependencies": {
+    "hardhat": "^2.6.1",
     "solidity-coverage": "^0.7.16"
-  }
+  },
+  "dependencies": {}
 }
