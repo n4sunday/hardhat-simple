@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "main": "hardhat.config.js",
   "directories": {
-    "test": "test"
+    "build": "hardhat compile",
+    "test:light": "hardhat test",
+    "test": "hardhat coverage"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +14,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.5",
     "hardhat": "^2.6.1"
+  },
+  "dependencies": {
+    "solidity-coverage": "^0.7.16"
   }
 }
