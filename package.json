@@ -11,7 +11,7 @@
     "deploy:local": "hardhat run --network localhost scripts/deployMyContract.js",
     "local-testnet": "hardhat node"
   },
-  "author": "",
+  "author": "n4sunday",
   "license": "ISC",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
