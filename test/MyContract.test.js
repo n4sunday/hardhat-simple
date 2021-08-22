@@ -16,3 +16,4 @@ describe("MyContract", () => {
     expect(await myContract.getName()).to.equal("Another Contract");
   });
 });
+
